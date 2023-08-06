@@ -1,0 +1,47 @@
+{
+    "name": "VCRAID",
+    "description": "Telegram Userbot To Abuse In Group Voice Chat For Clan Fights",
+    "repository": "https://github.com/TheDhanushxD/VC-SPAM-USERBOT",
+    "keywords": [
+        "VC Raid",
+        "Telegram userbot",
+        "Pyrogram userbot"
+    ],
+    "env": {
+        "API_ID": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Get from my.telegram.org/apps",
+            "required": true
+        },
+        "SESSION": {
+            "description": "A valid Pyrogram session name",
+            "required": true
+        },
+        "OWNER": {
+            "description": "Owner Username Ex:- JoinIndianNavy_007, Without @",
+            "required": true
+        },
+       "SUPPORT": {
+            "description": "Your Support Chat Username ",
+            "required": true
+        },
+       "SUDO_USERS": {
+            "description": "Sudo Users List split with space EX: - '5900873171 5900873171'",
+            "required": true
+        }
+    },
+    "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
